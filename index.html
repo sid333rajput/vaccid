@@ -137,7 +137,7 @@
                 <div class="col-auto">
                     <div class="form-check form-check-inline">
                         <input id="autocheck" class="form-check-input mb-3" type="checkbox" />
-                        <label class="form-check-label mb-3" for="autocheck">Auto check after each 1 minute. (Auto check will be deactivated, once the center is accessible.)</label>
+                        <label class="form-check-label mb-3" for="autocheck">Auto check after every 2 seconds. (Auto check will be deactivated, once the center is accessible.)</label>
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                 },
                 complete: function () {
                     if (document.getElementById("autocheck").checked)
-                        timer = setTimeout(btnCheckAvailabilityCall, 1000 * 60 * 1);
+                        timer = setTimeout(btnCheckAvailabilityCall, 1000 * 2 * 1);
                 }
             })
         } else {
